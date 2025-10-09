@@ -1,1 +1,1 @@
-# sleepcycle-sdk-spm
+# sleepcycle-sdk-swift
