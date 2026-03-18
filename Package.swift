@@ -16,13 +16,13 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SleepCycleSDK",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.0.10/SleepCycleSDK-1.0.10.zip",
-            checksum: "23e7dfebed080b6f37a908aa465a0701909aa46903aad47e52685b2886b58d58"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.1.0/SleepCycleSDK-1.1.0.zip",
+            checksum: "e32d966690c8f988cd0d0830b24a0d32328f09e3d3f7c994b1c28ea19ff4ca15"
         ),
         .binaryTarget(
             name: "SleepCycleObjC",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.0.10/SleepCycleObjC-1.0.10.zip",
-            checksum: "dbe2eac2f7b600c452cb46fd1332e564e5a4b9eb50f02067148f2e84dbd117aa"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.1.0/SleepCycleObjC-1.1.0.zip",
+            checksum: "c854aafcaa6241d5715f7328df837203379f4ecd7e2927e9872576a9eae5248b"
         )
     ]
 )
