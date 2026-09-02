@@ -19,18 +19,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SleepCycleSDK",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1-beta1/SleepCycleSDK-1.3.1-beta1.zip",
-            checksum: "0bc8fef865678616a6b321a8fa71e08d001e9b7c58caf775a30f182d16556d95"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1/SleepCycleSDK-1.3.1.zip",
+            checksum: "79bc57970ecae235b4d0237e8862c32b3180bdd151961bb88e8d9cc5b39397cb"
         ),
         .binaryTarget(
             name: "SleepCycleObjC",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1-beta1/SleepCycleObjC-1.3.1-beta1.zip",
-            checksum: "bf89dcbb60a308e2b9e02bd4ce6a0f6993bf4105fb3d1a141f0cd24655b1a898"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1/SleepCycleObjC-1.3.1.zip",
+            checksum: "26d22914cdcabdc5394ac4dc28d29bb703d0422f3ab6fe39ff2ff03884853d75"
         ),
         .binaryTarget(
             name: "SleepCycleSDKSlim",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1-beta1/SleepCycleSDKSlim-1.3.1-beta1.zip",
-            checksum: "3337c146d13c325531bdf4a2148892a5d5e7319d4d54198c6187ec9b9d81fe17"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.3.1/SleepCycleSDKSlim-1.3.1.zip",
+            checksum: "98b9c823c92f5860f51257194a0de228991a729effafcf69b66991cfbbdda713"
         )
     ]
 )
