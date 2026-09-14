@@ -6,10 +6,12 @@ import PackageDescription
 //   • SleepCycleSDK     — models embedded (works offline, larger).
 //   • SleepCycleSDKSlim — models downloaded at runtime (smaller).
 // Depend on exactly one product; both vend the SleepCycleSDK module.
+// The frameworks link and load on iOS 13, but the SDK API is annotated
+// @available(iOS 16.0, *), so reach it behind an availability check.
 let package = Package(
     name: "SleepCycleSDK",
     platforms: [
-        .iOS(.v16),
+        .iOS(.v13),
         .macOS(.v13)
     ],
     products: [
@@ -19,18 +21,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SleepCycleSDK",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta1/SleepCycleSDK-1.4.0-beta1.zip",
-            checksum: "37ea7ef92742dd8e7dffab605f6a376d3fff7c37c8e6ffcc1fad7407ad24b312"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleSDK-1.4.0-beta2.zip",
+            checksum: "cc79ef55840db089871b7bdaf0f5eddbc32c2c9684e026c9c52f873137ca23dd"
         ),
         .binaryTarget(
             name: "SleepCycleObjC",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta1/SleepCycleObjC-1.4.0-beta1.zip",
-            checksum: "43fc48b583bca493164e733946505bb239b1bf96b786febef59efe9985747ae7"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleObjC-1.4.0-beta2.zip",
+            checksum: "2b3fbc30ad8ba395b0e525f10ac38efea4506f59aeba4dd5580879bc5256a1fd"
         ),
         .binaryTarget(
             name: "SleepCycleSDKSlim",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta1/SleepCycleSDKSlim-1.4.0-beta1.zip",
-            checksum: "b9ef3f7db27c624573c54722d85460a3eb1058b40d90a57053afcea0eb6f56de"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleSDKSlim-1.4.0-beta2.zip",
+            checksum: "ab5d4ce84b084e6b66bbe21206ddfdb2a79a37feeb42baf89efd0c72aacf93b5"
         )
     ]
 )
