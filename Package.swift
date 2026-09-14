@@ -6,8 +6,7 @@ import PackageDescription
 //   • SleepCycleSDK     — models embedded (works offline, larger).
 //   • SleepCycleSDKSlim — models downloaded at runtime (smaller).
 // Depend on exactly one product; both vend the SleepCycleSDK module.
-// The frameworks link and load on iOS 13, but the SDK API is annotated
-// @available(iOS 16.0, *), so reach it behind an availability check.
+// The frameworks link and load on iOS 13; the SDK API is annotated @available(iOS 16.0, *).
 let package = Package(
     name: "SleepCycleSDK",
     platforms: [
@@ -21,18 +20,18 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SleepCycleSDK",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleSDK-1.4.0-beta2.zip",
-            checksum: "cc79ef55840db089871b7bdaf0f5eddbc32c2c9684e026c9c52f873137ca23dd"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta3/SleepCycleSDK-1.4.0-beta3.zip",
+            checksum: "81abcf9bb761cf74db899273f7b55e131b8bf419c24350b531792178995c20a0"
         ),
         .binaryTarget(
             name: "SleepCycleObjC",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleObjC-1.4.0-beta2.zip",
-            checksum: "2b3fbc30ad8ba395b0e525f10ac38efea4506f59aeba4dd5580879bc5256a1fd"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta3/SleepCycleObjC-1.4.0-beta3.zip",
+            checksum: "8b36fb44e2363aeda2afab7211fc594ca0cf44c160d0a9157a4bf13a76067028"
         ),
         .binaryTarget(
             name: "SleepCycleSDKSlim",
-            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta2/SleepCycleSDKSlim-1.4.0-beta2.zip",
-            checksum: "ab5d4ce84b084e6b66bbe21206ddfdb2a79a37feeb42baf89efd0c72aacf93b5"
+            url: "https://github.com/MDLabs/sleepcycle-sdk-swift/releases/download/v1.4.0-beta3/SleepCycleSDKSlim-1.4.0-beta3.zip",
+            checksum: "82278c2cefd694bcd6a1e6b373797b8b5b71afa1b1f2158d4ff66aa3746e26d8"
         )
     ]
 )
